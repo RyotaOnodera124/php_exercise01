@@ -4,13 +4,7 @@ require_once __DIR__ . "/Car.php";
 
 class Taxi extends Car
 {
-    private $passenger;
-
-    public function __construct($name, $number, $color)
-    {
-        parent::__construct($name, $number, $color);
-        $this->passenger = 0;
-    }
+    private $passenger = 0;
 
     public function setPassenger($passenger)
     {
